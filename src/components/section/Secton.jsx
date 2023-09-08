@@ -10,7 +10,7 @@ const Section = () => {
                 <h1 className='md:text-[3rem] sm:text-[2.5rem] font-black'>Learn Any Skills to advance your career path</h1>
                 {/* <img src={vector} alt="" /> */}
                 <p className='leading-4 tracking-wide pt-10'>Want to improve your work skills? You need to study harder with the help of a great mentor to improve your performance at work</p>
-                <button className='my-8 p-2 bg-[#DC4298] text-[#FFF] rounded-[2.696px]'>Contact</button>
+                <button className='my-8 py-2 px-6 bg-[#DC4298] hover:bg-pinkwish transition text-[#FFF] rounded-[2.696px]'>Contact</button>
             </div>
             <div className="box flex justify-center px-16">
                 <img src={sectionImg} alt="" />

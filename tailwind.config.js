@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      colors: {
+        pinkwish: "#a3216a"
+      },
       fontFamily: {
         black: 'MavenPro-Black, sans-serif',
         extrabol: 'MavenPro-ExtraBold, sans-serif',
