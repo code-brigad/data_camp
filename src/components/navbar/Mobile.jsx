@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import * as Scroll from "react-scroll";
 
-const Mobile = ({ open, lang, btnLang }) => {
-  const { t } = useTranslation()
+const Mobile = ({ open, setOpen, lang, btnLang }) => {
+  const { t } = useTranslation();
   return (
     <>
       {open ? (
-        <div className="z-[200] xl:hidden block absolute w-full top-[120px] left-0 mx-auto overflow-hidden">
+        <div className="container z-[200] xl:hidden block absolute w-full top-[90px] left-0 mx-auto">
           <motion.div
             initial={{ y: -50 }}
             animate={{ y: 0 }}
@@ -18,26 +19,53 @@ const Mobile = ({ open, lang, btnLang }) => {
             }}
           >
             <ul
-              className={`w-[90%] overflow-hidden max-w-[800px] mx-auto bg-white duration-300 box-shadow justify-center flex flex-col items-center gap-[10px]`}
+              className={`max-w-[800px] mx-auto bg-[#f2f2f2] justify-center flex flex-col`}
             >
               <li
-                className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
+                className="cursor-pointer border-0 border-b w-full hover:bg-[#e3e1e1]"
+                onClick={() => setOpen(!open)}
               >
-                {t("navbar.link.main")}
+                <Scroll.Link
+                  className="w-full block p-4"
+                  to={"main"}
+                  spy={true}
+                  offset={-50}
+                  smooth={true}
+                >
+                  {t("navbar.link.main")}
+                </Scroll.Link>
               </li>
               <li
-                className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
+                className="cursor-pointer border-0 border-b w-full hover:bg-[#e3e1e1]"
+                onClick={() => setOpen(!open)}
               >
-                {t("navbar.link.course")}
+                <Scroll.Link
+                  to={"courses"}
+                  spy={true}
+                  offset={-50}
+                  smooth={true}
+                  className="w-full block p-4"
+                >
+                  {t("navbar.link.course")}
+                </Scroll.Link>
               </li>
               <li
-                className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
+                className="cursor-pointer border-0 w-full hover:bg-[#e3e1e1]"
+                onClick={() => setOpen(!open)}
               >
-                {t("navbar.link.connection")}
+                <Scroll.Link
+                  to={"contact"}
+                  spy={true}
+                  offset={-50}
+                  smooth={true}
+                  className="w-full block p-4"
+                >
+                  {t("navbar.link.connection")}
+                </Scroll.Link>
               </li>
-              <li>
+              <li className="w-full p-4">
                 <button
-                  className="button-hover border-[#dc4298] text-[#dc4298] w-[80px] h-[60px] rounded-xl border border-sky-500 flex flex-row items-center justify-center"
+                  className="button-hover w-full border-pink font-bold text-[#dc4298] px-7 py-2 rounded-[6px] border hover:bg-pink/[0.2] transition flex flex-row items-center justify-center"
                   onClick={() => btnLang(!lang)}
                 >
                   {lang ? "Uz" : "Ru"}
