@@ -14,7 +14,7 @@ const Navbar = () => {
     const { t, i18n } = useTranslation()
     useEffect(() => {
         i18n.changeLanguage(lang ? "uz" : "ru")
-    }, [i18n, lang])
+    }, [lang])
     return (
         <>
             <nav className="w-full custom-container p-[40px] text-black flex flex-row items-center justify-between py-6 relative">

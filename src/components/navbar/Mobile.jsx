@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Mobile = ({ open }) => {
+  const { t } = useTranslation()
   return (
     <>
       {open ? (
@@ -21,17 +23,17 @@ const Mobile = ({ open }) => {
               <li
                 className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
               >
-                Asosiy
+                {t("navbar.link.main")}
               </li>
               <li
                 className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
               >
-                Kurslar
+                {t("navbar.link.course")}
               </li>
               <li
                 className="text-black text-center cursor-pointer border hover:bg-[#f2f2f2] border-t-0 border-l-0 border-r-0 last:border-b-0"
               >
-                Bog’lanish
+                {t("navbar.link.connection")}
               </li>
             </ul>
           </motion.div>
