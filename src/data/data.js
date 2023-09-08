@@ -7,26 +7,26 @@ export const courses = [
     {
         id: 1,
         img: manager,
-        title: "Loyiha boshqarish asoslari - Kurs",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor."
+        title: "cources.pmd.title",
+        text: "cources.pmd.text"
     },
     {
         id: 2,
         img: front,
-        title: "Front End Developer - Asosiy",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor."
+        title: "cources.front.title",
+        text: "cources.front.text"
     },
     {
         id: 3,
         img: back,
-        title: "Back End Developer - Kurs",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor."
+        title: "cources.back.title",
+        text: "cources.back.text"
     },
     {
         id: 4,
         img: design,
         title: 'Android (React Native)',
         title2: 'Ios (React Native)',
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor."
+        text: "cources.react.text"
     }
 ]

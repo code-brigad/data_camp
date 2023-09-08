@@ -5,5 +5,22 @@
             "course": "Kurslar",
             "connection": "Bog'lanish"
         }
+    },
+    "cources": {
+        "pmd":{
+            "title": "Loyiha boshqarish asoslari - Kurs",
+            "text": "Loyiha boshqaruvchisi o'zi biriktirilgan loyihani kechikishlarsiz va sifatli ko'rinishda topshirishiga mas'ul hisoblanadi. Loyiha boshqaruviga oid bilim va ko'nikmalarini jamoa a'zolari orasidagi to'g'ri muloqot kanalini yaratadi. Mutaxassislarning imkoniyatlaridan samarali foydalanib, ularga ishlash uchun qulay sharoit ta'minlashga harakat qiladi. O'z ishi davomida turli foydali usul va texnologiyalardan foydalanadi: Agile, Scrum va Jira kabi."
+        },
+        "front": {
+            "title": "Front End Developer - Asosiy",
+            "text": "Frontend dasturchilar saytlar dizayniga ko'ra Chrome kabi brauzerlarda ishlaydigan saytlar ko'rinishi qismi kodini yozishga mas'ul hisoblanadi. Ular ish davomida HTML, CSS, JavaScript va ularga bog'liq instrumentlardan foydalanib chiroyli, ishlatishga qulay, turli ekranlarda yaxshi ko'rinuvchi va tez saytlar yozishadi. Odatda UX/UI dizayner va backend dasturchilar bilan bir jamoa bo'lib ishlashadi. Kundalik vazifalariga sayt frontendi kodini yozish."
+        },
+        "back": {
+            "title": "Back End Developer - Kurs",
+            "text": "Backend — bu serverda joylashgan va foydalanuvchilarga yashiringan mahsulotning ichki qismi. Uning rivojlanishi uchun turli xil tillardan foydalanish mumkin, masalan, Python, PHP, Go, JavaScript, Java, C #. Backend bu server javobni yaratishi va kerakli kompyuterga yuborish uchun javobgar bo’ladi. Ko’p odamlar hatto orqa qismdagi harakatlar haqida o’ylamaydilar — ular uchun sahifa o’z-o’zidan yuklanadi."
+        },
+        "react": {
+            "text": "React Native - bu Facebook tomonidan 2015-yil ishlab chiqilgan.U yordamida Android va IOS platformasiga dastur yozish mumkin. Hozirda React Native tomonidan Instagram , Facebook va boshqa mobile dasturlar ishlab chiqilgan."
+        }
     }
 }
