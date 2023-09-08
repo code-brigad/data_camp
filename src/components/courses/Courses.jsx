@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { courses } from '../../data/data'
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Courses = () => {
     const { t } = useTranslation()
+    useEffect(() => {
+        Aos.init(
+            {
+                once: true,
+                duration: 400,
+                offset: 150
+            }
+        )
+    }, [])
     return (
-        <div id='courses'>
+        <div id='courses' data-aos="fade-up">
             <motion.div
                 initial={{
                     opacity: 0,
@@ -20,7 +31,6 @@ const Courses = () => {
                 }}
                 transition={{ duration: 1, type: "spring", delay: 0.5 }}
             >
-
                 <h1 className='pl-[30px] font-black text-2xl text-[#090D2C]'>Kurslar</h1>
                 <div className='w-[90%] ml-[30px] mt-[20px] h-[2px] border border-[#DCDCE5]'></div>
                 <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center gap-[30px]'>
