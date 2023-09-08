@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { RiCloseLine } from 'react-icons/ri'
 import { TfiMenu } from 'react-icons/tfi'
-import { BsThreeDots } from "react-icons/bs";
 import Mobile from './Mobile'
 import ModalButton from './ModalButton';
 import { useTranslation } from 'react-i18next';
@@ -34,7 +33,7 @@ const Navbar = () => {
                     <div className="flex flex-row items-center justify-end">
                         <ul className="md:flex hidden flex-row items-center gap-6">
                             <button
-                                className="button-hover border-[#dc4298] text-[#dc4298] w-[80px] h-[50px] rounded-xl border border-sky-500 flex flex-row items-center justify-center"
+                                className="button-hover xl:flex hidden border-[#dc4298] text-[#dc4298] w-[80px] h-[50px] rounded-xl border border-sky-500 flex flex-row items-center justify-center"
                                 onClick={() => {
                                     setAppOpen(!appOpen)
                                     setLang(!lang)
@@ -44,11 +43,6 @@ const Navbar = () => {
                                 {lang ? "Uz" : 'Ru'}
                             </button>
                         </ul>
-                        <BsThreeDots
-                            className="md:hidden flex text-3xl text-yellow cursor-pointer"
-                            onClick={() => setModal(!modal)}
-                        />
-                        <ModalButton open={modal} app={appOpen} setApp={setAppOpen} lang={lang} btnLang={setLang} />
                         <div className="xl:hidden flex items-center justify-center w-[40px] h-[40px] ml-4">
                             {open ? (
                                 <RiCloseLine
@@ -64,7 +58,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <Mobile open={open} />
+                <Mobile open={open} lang={lang} btnLang={setLang} />
             </nav>
         </>
     )
