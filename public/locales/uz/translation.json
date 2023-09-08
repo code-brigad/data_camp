@@ -6,6 +6,10 @@
             "connection": "Bog'lanish"
         }
     },
+    "section":{
+        "heading": "Karyera yo'lingizni oshirish uchun kerakli ko'nikmalarni o'rganing",
+        "poragraph": "Ish qobiliyatingizni oshirmoqchimisiz? Ishdagi samaradorlikni oshirish uchun ajoyib mentorlar yordamida ko'proq o'rganishingiz kerak"
+    },
     "cources": {
         "pmd":{
             "title": "Loyiha boshqarish asoslari - Kurs",
@@ -22,5 +26,13 @@
         "react": {
             "text": "React Native - bu Facebook tomonidan 2015-yil ishlab chiqilgan.U yordamida Android va IOS platformasiga dastur yozish mumkin. Hozirda React Native tomonidan Instagram , Facebook va boshqa mobile dasturlar ishlab chiqilgan."
         }
+    },
+    "contact": {
+        "contactText": "Bog'lanish",
+        "name": "Ism Familiya",
+        "namePlaceholder": "Usmonov Azizbek",
+        "phone": "Telefon Raqam",
+        "msg": "Xabar",
+        "msgPlaceholder": "Xabar matni"
     }
 }

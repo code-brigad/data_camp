@@ -1,8 +1,10 @@
 import React, { useState, useRef } from 'react'
 import contactGif from '../../assets/Sent Message (1).gif'
 import axios from 'axios'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+    const { t } = useTranslation()
 
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
@@ -56,18 +58,18 @@ const Contact = () => {
 
     return (
         <div className='contact w-full p-[40px]'>
-            <h1 className='text-[2rem] mx-8'>Bog'lanish</h1>
+            <h1 className='text-[2rem] mx-8'>{t("contact.contactText")}</h1>
             <div className='h-px bg-[#DCDCE5]'></div>
             <h1 className='text-center mt-2 text-[red] text-3xl'>{errorMsg}</h1>
             <div className="box-container grid lg:grid-cols-2 sm:grid-cols-1 p-4">
                 <form className="box p-4 flex flex-col gap-4">
-                    <label htmlFor="name">Ism Familiya</label>
-                    <input type="text" id='name' className='focus:outline-none focus:ring focus:ring-[#DC4298] outline-none w-full block border border-[0.45px] px-8 py-2 border-[#DCDCE5] rounded-[3.36px]' placeholder='Usmonov Azizbek' onChange={(e) => setName(e.target.value)} />
-                    <label htmlFor="phone">Telefon Raqam</label>
+                    <label htmlFor="name">{t("contact.name")}</label>
+                    <input type="text" id='name' className='focus:outline-none focus:ring focus:ring-[#DC4298] outline-none w-full block border border-[0.45px] px-8 py-2 border-[#DCDCE5] rounded-[3.36px]' placeholder={t("contact.namePlaceholder")} onChange={(e) => setName(e.target.value)} />
+                    <label htmlFor="phone">{t("contact.phone")}</label>
                     <input type="number" id="phone" className='focus:outline-none focus:ring focus:ring-[#DC4298] outline-none w-full block border border-[0.45px] px-8 py-2 border-[#DCDCE5] rounded-[3.36px]' placeholder='+998(99)-000-00-00' onChange={(e) => setPhone(e.target.value)} />
-                    <label htmlFor="message">Xabar</label>
-                    <textarea id="message" className='focus:outline-none focus:ring focus:ring-[#DC4298] outline-none w-full block border border-[0.45px] px-8 py-4 border-[#DCDCE5] rounded-[3.36px]' placeholder='Xabar matni' cols="30" rows="7" onChange={(e) => setMsg(e.target.value)}></textarea>
-                    <button className='hover:bg-pinkwish w-full my-8 p-3 bg-[#DC4298] text-[#FFF] rounded-[3.696px]' type='submit' onClick={sendData}>Contact</button>
+                    <label htmlFor="message">{t("contact.msg")}</label>
+                    <textarea id="message" className='focus:outline-none focus:ring focus:ring-[#DC4298] outline-none w-full block border border-[0.45px] px-8 py-4 border-[#DCDCE5] rounded-[3.36px]' placeholder={t("contact.msgPlaceholder")} cols="30" rows="7" onChange={(e) => setMsg(e.target.value)}></textarea>
+                    <button className='hover:bg-pinkwish w-full my-8 p-3 bg-[#DC4298] text-[#FFF] rounded-[3.696px]' type='submit' onClick={sendData}>{t("contact.contactText")}</button>
                 </form>
                 <div className="box lex justify-center px-16">
                     <img src={contactGif} alt="" />
