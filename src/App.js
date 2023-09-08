@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Section from "./components/section/Secton";
 import Courses from "./components/courses/Courses";
 import Footer from "./components/footer/Footer";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Section />
       <Courses />
+      <Contact />
       <Footer />
     </div>
   );
