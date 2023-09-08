@@ -33,6 +33,12 @@
         "namePlaceholder": "Usmonov Azizbek",
         "phone": "Telefon Raqam",
         "msg": "Xabar",
-        "msgPlaceholder": "Xabar matni"
+        "msgPlaceholder": "Xabar matni",
+        "error": {
+            "general": "Ma'lumotlar kiritilmagan",
+            "name": "Ism kiritilmagan",
+            "phone": "Telefon raqam kiritilmagan",
+            "msg": "Xabar matni kiritilmagan"
+        }
     }
 }
