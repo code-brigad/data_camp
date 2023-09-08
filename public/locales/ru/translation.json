@@ -6,6 +6,10 @@
             "connection": "Связь"
         }
     },
+    "section":{
+        "heading": "Karyera yo'lingizni oshirish uchun kerakli ko'nikmalarni o'rganing",
+        "poragraph": "Ish qobiliyatingizni oshirmoqchimisiz? Ishdagi samaradorlikni oshirish uchun ajoyib mentorlar yordamida ko'proq o'rganishingiz kerak"
+    },
     "cources": {
         "pmd": {
             "title": "Основы управления проектами - Курс",
@@ -22,5 +26,13 @@
         "react": {
             "text": "React Native разработан Facebook в 2015 году. Его можно использовать для написания программ для платформ Android и IOS. В настоящее время Instagram, Facebook и другие мобильные приложения разрабатываются с помощью React Native."
         }
+    },
+    "contact": {
+        "contactText": "Связь",
+        "name": "Имя Фамилия",
+        "namePlaceholder": "Усманов Азизбек",
+        "phone": "Номер телефона",
+        "msg": "Сообщение",
+        "msgPlaceholder": "Текст сообщения"
     }
 }
