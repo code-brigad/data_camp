@@ -3,7 +3,7 @@ import { courses } from '../../data/data'
 
 const Courses = () => {
     return (
-        <div>
+        <div id='courses'>
             <h1 className='pl-[30px] font-black text-2xl text-[#090D2C]'>Kurslar</h1>
             <div className='w-[90%] ml-[30px] mt-[20px] h-[2px] border border-[#DCDCE5]'></div>
             <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center gap-[30px]'>

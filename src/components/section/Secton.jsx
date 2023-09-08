@@ -4,7 +4,7 @@ import sectionImg from '../../assets/Reading list.gif'
 
 const Section = () => {
   return (
-    <div className='section w-full p-[40px]'>
+    <div id='main' className='section w-full p-[40px]'>
         <div className="box-container grid md:grid-cols-2 sm:grid-cols-1 p-4">
             <div className="box p-4">
                 <h1 className='md:text-[3rem] sm:text-[2.5rem] font-black'>Learn Any Skills to advance your career path</h1>
