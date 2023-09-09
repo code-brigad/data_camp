@@ -26,7 +26,7 @@ export const courses = [
         id: 4,
         img: design,
         title: 'Android (React Native)',
-        title2: 'Ios (React Native)',
+        title2: 'IOS (React Native)',
         text: "cources.react.text"
     }
 ]
