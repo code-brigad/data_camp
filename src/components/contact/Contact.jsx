@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import contactGif from '../../assets/Sent Message (1).gif'
 import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 import { IMaskInput } from "react-imask";
+import { bot_token, chat_id } from '../../data/constants';
 
 const TextMaskCustom = React.forwardRef(function TextMaskCustom(props, ref) {
     const { onChange, ...other } = props;
@@ -30,13 +31,9 @@ const Contact = () => {
     const [nameE, setNameE] = useState(false)
     const [phoneE, setPhoneE] = useState(false)
     const [msgE, setMsgE] = useState(false)
-
     const [errorMsg, setErrorMsg] = useState(false)
 
     const [isLoading, setIsLoading] = useState(false)
-
-    const bot_token = '6466570241:AAHN724S83Lhey_koItEZXJLTpBRsuAR7E8'
-    const chat_id = -1001928870254;
 
     const sendData = async (e) => {
         e.preventDefault()
@@ -62,7 +59,11 @@ const Contact = () => {
         }
 
         setIsLoading(true)
-        const message = `👤Yangi foydalanuvchi\n<b>Ismi:</b> <i>${name}</i>  \n<b>Raqam:</b> <code>${phone}</code>\n <b>Xabar matni:</b> <code>${msg}</code>`;
+        const message = `👤Yangi foydalanuvchi
+        \n<b>Ismi:</b> <i>${name}</i>
+        \n<b>Raqam:</b> <code>${phone}</code>
+        \n <b>Xabar matni:</b> <code>${msg}</code>`;
+
         try {
             await axios.get(
                 `https://api.telegram.org/bot${bot_token}/sendMessage`,
@@ -90,7 +91,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='contact container-custom w-full'>
+        <div className='contact container-custom w-full' data-aos="fade-up">
             <h1 className='text-2xl font-black'>{t("contact.contactText")}</h1>
             <div className='my-[20px] h-px border-0 border-t border-[#DCDCE5]'></div>
             <div className="box-container grid lg:grid-cols-2 sm:grid-cols-1 gap-6">
@@ -113,7 +114,7 @@ const Contact = () => {
                     {errorMsg ? <h1 className='text-start text-[red]'>{t("contact.error.general")}</h1> : ""}
                     <button className='hover:bg-pinkwish w-full mb-6 p-3 bg-[#DC4298] text-[#FFF] rounded-[3.696px]' type='submit' onClick={sendData}>{isLoading ? <>{t("help.submitting")}</> : <>{t("contact.contactText")}</>}</button>
                 </form>
-                <div className="box flex justify-center p-8">
+                <div className="box flex justify-center lg:p-8 p-0">
                     <img src={contactGif} alt="" />
                 </div>
             </div>
