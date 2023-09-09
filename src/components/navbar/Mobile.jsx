@@ -8,7 +8,7 @@ const Mobile = ({ open, setOpen, lang, btnLang }) => {
   return (
     <>
       {open ? (
-        <div className="container z-[200] xl:hidden block absolute w-full top-[90px] left-0 mx-auto">
+        <div className="container-custom z-[200] xl:hidden block absolute w-full top-[90px] left-0 mx-auto">
           <motion.div
             initial={{ y: -50 }}
             animate={{ y: 0 }}

@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [lang]);
   return (
     <>
-      <nav className="w-full container p-[40px] text-black flex flex-row items-center justify-between py-6 relative">
+      <nav className="w-full container-custom text-black flex flex-row items-center justify-between py-6 relative">
         <h1 className="text-[#313273] font-bold text-xl">Data Camp</h1>
         <div className="flex gap-[30px] justify-end items-center">
           <ul className="xl:flex hidden flex-row gap-8 font-tahomaRegular">

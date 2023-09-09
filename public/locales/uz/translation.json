@@ -40,5 +40,13 @@
             "phone": "Telefon raqam kiritilmagan",
             "msg": "Xabar matni kiritilmagan"
         }
+    },
+    "hero": {
+        "title": "Bilimlaringizni biz orqali yuksaltiring",
+        "info": "Bilimlaringizni biz orqali yuksaltiring",
+        "btn": "Bog'lanish"
+    },
+    "help": {
+        "submitting": "Yuborilmoqda..."
     }
 }

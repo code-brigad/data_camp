@@ -9,8 +9,8 @@
 }
 
 @layer components {
-    .container {
-        @apply max-w-[1400px] mx-auto px-4;
+    .container-custom {
+        @apply max-w-[1400px] mx-auto lg:px-8 px-4;
     }
     
     .center-mode {
@@ -58,4 +58,8 @@
     src: url("./font/MavenPro-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+}
+
+.course-card:hover img {
+    @apply scale-110
 }
