@@ -11,6 +11,7 @@
         "poragraph": "Ish qobiliyatingizni oshirmoqchimisiz? Ishdagi samaradorlikni oshirish uchun ajoyib mentorlar yordamida ko'proq o'rganishingiz kerak"
     },
     "cources": {
+        "title": "Kurslar",
         "pmd":{
             "title": "Loyiha boshqarish asoslari - Kurs",
             "text": "Loyiha boshqaruvchisi o'zi biriktirilgan loyihani kechikishlarsiz va sifatli ko'rinishda topshirishiga mas'ul hisoblanadi. Loyiha boshqaruviga oid bilim va ko'nikmalarini jamoa a'zolari orasidagi to'g'ri muloqot kanalini yaratadi. Mutaxassislarning imkoniyatlaridan samarali foydalanib, ularga ishlash uchun qulay sharoit ta'minlashga harakat qiladi. O'z ishi davomida turli foydali usul va texnologiyalardan foydalanadi: Agile, Scrum va Jira kabi."

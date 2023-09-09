@@ -6,7 +6,7 @@ const Courses = () => {
   const { t } = useTranslation();
   return (
     <div id="courses" className="container-custom mt-[50px]" data-aos="fade-up">
-      <h1 className="font-black text-2xl text-[#090D2C]">Kurslar</h1>
+      <h1 className="font-black text-2xl text-[#090D2C]">{t("cources.title")}</h1>
       <div className="my-[20px] h-px border-0 border-t border-[#DCDCE5]"></div>
       <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center gap-[30px]">
         {courses.map((e) => {
